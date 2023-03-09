@@ -1,7 +1,6 @@
 # DonutShop
 HTML/CSS/JS
 
-About
 This repository contains an HTML file and a CSS file for a web page displaying information about a donut shop. The HTML file is named "locations.html" and the CSS file is named "style.css".
 
 File Structure
