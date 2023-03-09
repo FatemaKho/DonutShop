@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script> 
+
+  </head>
+  <style>
+  button {
+  background-color: #09e4ec;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  vertical-align: middle;
+    }
+
+    #current-order{
+  background-color: rgb(255, 255, 255);
+  border-style: outset;
+  border-radius: 5px;
+  color: black;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  vertical-align: middle;
+    }
+
+  </style>
+  <body>
+    <header> 
+        <nav>
+            <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li class="logo"> 
+        </ul>
+            </ul>
+        </nav>
+        <h1>Menu</h1>
+      </header>
+      <section class = "specials">
+        <figure>
+          <img src="images/singled2.webp">
+          <figcaption>White Caramel $2.50</figcaption>
+        </figure>  
+        <figure>
+          <img src="images/singled1.jpeg">
+          <figcaption>Chocolate $2.50</figcaption>
+        </figure> 
+        <figure>
+          <img src="images/singled.jpeg">
+          <figcaption>Sprinkles $2.50 </figcaption>
+        </figure>
+        <form>
+          <label for="topping">Choose a topping:</label>
+          <select id="topping" name="topping">
+            <option value="white-caramel">White-Caramel</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="sprinkles">Sprinkles</option>
+          </select>
+          <li class="button-container">
+            <button type="button" onclick="addToOrder()">Add to Order</button>
+            <button type="button" onclick="placeOrder()">Place Order</button>
+          </li>
+
+        </form>
+        
+        <p>Current order:</p>
+        <ul id="current-order"></ul>
+
+  </body>
+  
+</html>
